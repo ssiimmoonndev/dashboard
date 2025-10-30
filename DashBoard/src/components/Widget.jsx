@@ -1,6 +1,6 @@
 export default function Widget(props) {
     return (
-        <div>
+        <div className="card">
             <h2>{props.title}</h2>
             <p>Contenu du widget</p>
         </div>
