@@ -1,9 +1,14 @@
-import Widget from "../components/Widget"
 
 export default function Dashboard() {
     return (
         <div>
-            <h1>Mon DashBoard</h1>
+           <header>
+                <h1>Mon Tabelau de Bord</h1>
+                <div className="meteo-heure">
+                    <h3>Meteo</h3>
+                    <h3>Date</h3>
+                </div>
+           </header>
         </div>
     )
 }

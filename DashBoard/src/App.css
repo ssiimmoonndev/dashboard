@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(206, 218, 225);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.meteo-heure {
+    border: solid 3px rgb(231, 241, 244);
+    margin-right: 20px;
+    padding: 10px;
+}
