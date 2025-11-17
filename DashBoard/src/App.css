@@ -1,3 +1,25 @@
+
 body {
     background-color: rgb(206, 218, 225);
+    margin: 0;
+}
+
+header {
+    width: 95%;
+    background-color: white;
+    margin-top: 1rem;
+    display: flex;
+    justify-self: center;
+    justify-content: space-between;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+.weather-date {
+    border: solid 3px rgb(229, 241, 243);
+    margin: 0.5rem;
+    padding: 0.5rem;
 }
