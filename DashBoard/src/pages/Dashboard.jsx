@@ -1,7 +1,7 @@
 
 export default function Dashboard() {
     return (
-        <div>
+        <div className="layout">
            <header>
                 <h1>Mon Tabelau de Bord</h1>
                 <div className="weather-date">
