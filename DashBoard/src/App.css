@@ -6,11 +6,17 @@ body {
 
 header {
     width: 95%;
+    border: solid 3px rgb(183, 200, 209);
     background-color: white;
     margin-top: 1rem;
     display: flex;
     justify-self: center;
     justify-content: space-between;
+    border-radius: 10px;
+
+    p {
+        margin: 0;
+    }
 }
 
 h1 {
