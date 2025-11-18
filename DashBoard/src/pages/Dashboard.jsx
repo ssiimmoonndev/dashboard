@@ -10,10 +10,10 @@ export default function Dashboard() {
                 </div>
            </header>
            <div className="sidebar">
-                <p className="button">Planning</p>
-                <p className="button">Crypto / Bourse</p>
-                <p className="button">Résultats sportifs</p>
-                <p className="button">À propos</p>
+                <button className="button-sidebar">Planning</button>
+                <button className="button-sidebar">Crypto / Bourse</button>
+                <button className="button-sidebar">Résultats sportifs</button>
+                <button className="button-sidebar">À propos</button>
            </div>
         </div>
     )
