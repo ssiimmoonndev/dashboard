@@ -5,9 +5,7 @@ function App() {
 
   return (
     <div className='layout'>
-      <div className='sidebar'>
-        <Sidebar />
-      </div>
+      <Sidebar />
     </div>
   )
 }
