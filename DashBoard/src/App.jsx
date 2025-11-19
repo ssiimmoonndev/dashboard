@@ -1,24 +1,17 @@
-import './App.css'
+import './App.css';
+import Header from './components/Header';
+import Sidebar from './components/Sidebar';
 
-function App() {
+function Dashboard() {
 
   return (
     <div className='layout'>
-      <header>
-        <h1>Mon Tabelau de Bord</h1>
-        <div className='weather-date'>
-          <div>Meteo</div>
-          <div>Date</div>
-        </div>
-      </header>
+      <Header />
       <div className='sidebar'>
-        <button className='button-sidebar'>Planning</button>
-        <button className='button-sidebar'>Crypto / Bourse</button>
-        <button className='button-sidebar'>Résultats sportifs</button>
-        <button className='button-sidebar'>À propos</button>
+        <Sidebar />
       </div>
     </div>
   )
 }
 
-export default App
+export default Dashboard;
