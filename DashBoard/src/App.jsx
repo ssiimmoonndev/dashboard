@@ -1,12 +1,10 @@
 import './App.css';
-import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 
-function Dashboard() {
+function App() {
 
   return (
     <div className='layout'>
-      <Header />
       <div className='sidebar'>
         <Sidebar />
       </div>
@@ -14,4 +12,4 @@ function Dashboard() {
   )
 }
 
-export default Dashboard;
+export default App;
