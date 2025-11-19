@@ -1,14 +1,23 @@
-import Dashboard from "./pages/Dashboard";
 import './App.css'
 
 function App() {
 
   return (
-    <>
-      <div className='App'>
-        <Dashboard />
+    <div className='layout'>
+      <header>
+        <h1>Mon Tabelau de Bord</h1>
+        <div className='weather-date'>
+          <div>Meteo</div>
+          <div>Date</div>
+        </div>
+      </header>
+      <div className='sidebar'>
+        <button className='button-sidebar'>Planning</button>
+        <button className='button-sidebar'>Crypto / Bourse</button>
+        <button className='button-sidebar'>Résultats sportifs</button>
+        <button className='button-sidebar'>À propos</button>
       </div>
-    </>
+    </div>
   )
 }
 
