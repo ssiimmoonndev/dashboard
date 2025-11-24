@@ -1,15 +1,18 @@
 import './App.css';
 import Header from './components/Header';
 
-function Dashboard() {
+import Sidebar from './components/Sidebar';
+
+function App() {
 
   return (
     <div className='layout'>
       <Header />
       <div className='sidebar'>
+        <Sidebar />
       </div>
     </div>
   )
 }
 
-export default Dashboard;
+export default App;

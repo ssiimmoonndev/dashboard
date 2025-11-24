@@ -29,3 +29,21 @@ h1 {
     margin: 0.5rem;
     padding: 0.5rem;
 }
+
+.sidebar {
+    width: 10%;
+    margin: 2rem;
+    padding: 1rem 0;
+    gap: 1rem;
+    border: solid 3px rgb(229, 241, 243);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-sidebar {
+    border: transparent;
+    border-radius: 10px;
+    background-color: rgb(186, 230, 243);
+    padding: 0.5rem;
+}
