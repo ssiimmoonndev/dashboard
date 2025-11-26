@@ -1,17 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 body {
-    background-color: rgb(206, 218, 225);
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(220, 230, 240);
     margin: 0;
 }
 
 header {
     width: 95%;
-    border: solid 3px rgb(183, 200, 209);
+    border: solid 1px rgb(183, 200, 209);
+    box-shadow: 1px 1px 5px grey;
     background-color: white;
     margin-top: 1rem;
     display: flex;
     justify-self: center;
     justify-content: space-between;
+    align-items: center;
     border-radius: 10px;
 
     p {
@@ -20,30 +24,51 @@ header {
 }
 
 h1 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: rgb(50, 60, 76);
     display: flex;
     align-items: center;
-    margin-left: 1rem;
+    margin: 0 0 0 2rem;
 }
 .weather-date {
-    border: solid 3px rgb(229, 241, 243);
-    margin: 0.5rem;
-    padding: 0.5rem;
+    /* border: solid 3px rgb(229, 241, 243); */
+    border: solid 2px rgb(184, 217, 227);
+    border-radius: 20px;
+    margin: 1rem 2rem;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .sidebar {
-    width: 10%;
     margin: 2rem;
-    padding: 1rem 0;
-    gap: 1rem;
-    border: solid 3px rgb(229, 241, 243);
+    padding: 3rem 0;
+    border: solid 2px rgb(184, 217, 227);
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    height: auto;
+    width: 25%;
+    gap: 2rem;
 }
 
 .button-sidebar {
-    border: transparent;
-    border-radius: 10px;
-    background-color: rgb(186, 230, 243);
-    padding: 0.5rem;
+    height: 1rem;
+    width: 75%;
+    border: solid 1px rgb(159, 218, 236);
+    border-radius: 50px;
+    background-color: rgb(186, 228, 243);
+    padding: 2rem;
+    font-size: large;
+    color: rgb(79, 99, 113);
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
 }

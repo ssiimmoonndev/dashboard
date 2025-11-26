@@ -1,4 +1,5 @@
 import React from 'react';
+import WeatherWidget from './WeatherWidget';
 
 function Header() {
     return (
@@ -6,7 +7,7 @@ function Header() {
             <h1>Mon Tableau de Bord</h1>
             <div className="weather-date">
                 <div>Météo</div>
-                <div>Date</div>
+                <WeatherWidget />
             </div>
         </header>
     );
