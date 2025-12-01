@@ -1,22 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
+:root {
+    /* COLOR */
+    --primary-color: rgb(186, 228, 243);
+    --primary-color-light: rgb(220, 230, 240);
+    --primary-color-dark: rgb(159, 218, 236);
+    --secondary-color:rgb(50, 60, 76);
+    --secondary-color-light:rgb(79, 99, 113);
+    --grey-50: #F6F6F6;
+    --grey-100:#E7E7E7;
+    --grey-200:#D1D1D1;
+    --grey-300:#B0B0B0;
+    --grey-400:#888888;
+    --grey-500:#737373;
+    --grey-600:#5D5D5D;
+    --grey-700:#4F4F4F;
+    --grey-800:#454545;
+    --grey-900:#3D3D3D;
+    --grey-950:#262626;
+
+    /* SPACING */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;  
+    --spacing-md: 16px; 
+    --spacing-lg: 24px;  
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+
+    /* BORDER RADIUS */
+    --radius-sm: 10px;
+    --radius-md: 20px;
+    --radius-lg: 50px;
+}
+
 body {
     font-family: 'Inter', sans-serif;
-    background-color: rgb(220, 230, 240);
+    background-color: var(--primary-color-light);
     margin: 0;
 }
 
 header {
     width: 95%;
-    border: solid 1px rgb(183, 200, 209);
-    box-shadow: 1px 1px 5px grey;
+    border: solid 1px var(--primary-color-dark);
+    box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75);
     background-color: white;
     margin-top: 1rem;
     display: flex;
     justify-self: center;
     justify-content: space-between;
     align-items: center;
-    border-radius: 10px;
+    border-radius: var(--radius-sm);
 
     p {
         margin: 0;
@@ -26,17 +59,16 @@ header {
 h1 {
     font-size: 4.5rem;
     font-weight: 600;
-    color: rgb(50, 60, 76);
+    color: var(--secondary-color);
     display: flex;
     align-items: center;
     margin: 0 0 0 2rem;
 }
 .weather-date {
-    /* border: solid 3px rgb(229, 241, 243); */
-    border: solid 2px rgb(184, 217, 227);
-    border-radius: 20px;
+    border: solid 2px var(--primary-color-dark);
+    border-radius: var(--radius-md);
     margin: 1rem 2rem;
-    padding: 1rem 1rem;
+    padding: 0.5rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,9 +78,9 @@ h1 {
 
 .sidebar {
     margin: 2rem;
-    padding: 3rem 0;
-    border: solid 2px rgb(184, 217, 227);
-    border-radius: 20px;
+    padding: 1.5rem 0;
+    border: solid 2px var(--primary-color-dark);
+    border-radius: var(--radius-md);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,15 +92,20 @@ h1 {
 
 .button-sidebar {
     height: 1rem;
-    width: 75%;
-    border: solid 1px rgb(159, 218, 236);
-    border-radius: 50px;
-    background-color: rgb(186, 228, 243);
-    padding: 2rem;
+    width: 80%;
+    border: solid 1px var(--primary-color-dark);
+    border-radius: var(--radius-lg);
+    background-color: var(--primary-color);
+    padding: 1rem;
     font-size: large;
-    color: rgb(79, 99, 113);
+    font-weight: bold;
+    color: var(--secondary-color-light);
     display: flex;
-    justify-content: center;
     gap: 1rem;
     align-items: center;
+    max-width: 250px;
 }
+
+.button-sidebar:hover {
+        background-color: var(--primary-color-dark);
+    }
