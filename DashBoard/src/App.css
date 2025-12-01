@@ -65,7 +65,8 @@ h1 {
     margin: 0 0 0 2rem;
 }
 .weather-date {
-    border: solid 2px var(--primary-color-dark);
+    /* border: solid 2px var(--primary-color-dark); */
+    border: solid 2px rgb(229, 241, 243);
     border-radius: var(--radius-md);
     margin: 1rem 2rem;
     padding: 0.5rem 1rem;
@@ -78,7 +79,7 @@ h1 {
 
 .sidebar {
     margin: 2rem;
-    padding: 1.5rem 0;
+    padding: 3.5rem 0;
     border: solid 2px var(--primary-color-dark);
     border-radius: var(--radius-md);
     display: flex;
@@ -86,7 +87,7 @@ h1 {
     align-items: center;
     justify-content: space-between;
     height: auto;
-    width: 25%;
+    max-width: 300px;
     gap: 2rem;
 }
 
@@ -101,11 +102,12 @@ h1 {
     font-weight: bold;
     color: var(--secondary-color-light);
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     align-items: center;
     max-width: 250px;
 }
 
 .button-sidebar:hover {
+    cursor: pointer;
         background-color: var(--primary-color-dark);
     }
