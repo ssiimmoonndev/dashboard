@@ -5,8 +5,9 @@
     --primary-color: rgb(186, 228, 243);
     --primary-color-light: rgb(220, 230, 240);
     --primary-color-dark: rgb(159, 218, 236);
-    --secondary-color:rgb(50, 60, 76);
-    --secondary-color-light:rgb(79, 99, 113);
+    --secondary-color-dark:rgb(50, 60, 76);
+    --secondary-color:rgb(79, 99, 113);
+    --secondary-color-light: rgb(229, 241, 243);
     --grey-50: #F6F6F6;
     --grey-100:#E7E7E7;
     --grey-200:#D1D1D1;
@@ -59,14 +60,14 @@ header {
 h1 {
     font-size: 4.5rem;
     font-weight: 600;
-    color: var(--secondary-color);
+    color: var(--secondary-color-dark);
     display: flex;
     align-items: center;
     margin: 0 0 0 2rem;
 }
 .weather-date {
-    /* border: solid 2px var(--primary-color-dark); */
-    border: solid 2px rgb(229, 241, 243);
+    width: 10rem;
+    border: solid 2px var(--secondary-color-light);
     border-radius: var(--radius-md);
     margin: 1rem 2rem;
     padding: 0.5rem 1rem;
@@ -79,7 +80,7 @@ h1 {
 
 .sidebar {
     margin: 2rem;
-    padding: 3.5rem 0;
+    padding: 2rem 1rem;
     border: solid 2px var(--primary-color-dark);
     border-radius: var(--radius-md);
     display: flex;
@@ -87,27 +88,26 @@ h1 {
     align-items: center;
     justify-content: space-between;
     height: auto;
-    max-width: 300px;
+    width: fit-content;
     gap: 2rem;
 }
 
 .button-sidebar {
     height: 1rem;
-    width: 80%;
+    width: 250px;
     border: solid 1px var(--primary-color-dark);
     border-radius: var(--radius-lg);
     background-color: var(--primary-color);
     padding: 1rem;
     font-size: large;
     font-weight: bold;
-    color: var(--secondary-color-light);
+    color: var(--secondary-color);
     display: flex;
     gap: 1.5rem;
     align-items: center;
-    max-width: 250px;
 }
 
 .button-sidebar:hover {
     cursor: pointer;
         background-color: var(--primary-color-dark);
-    }
+}
