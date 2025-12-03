@@ -78,6 +78,11 @@ h1 {
     gap: 0.5rem;
 }
 
+/* .app-body {
+  display: flex;
+  justify-content: space-between;
+} */
+
 .sidebar {
     margin: 2rem;
     padding: 2rem 1rem;
@@ -110,4 +115,19 @@ h1 {
 .button-sidebar:hover {
     cursor: pointer;
         background-color: var(--primary-color-dark);
+}
+
+.select-language {
+  margin-right: 2rem;
+}
+
+.select-language select {
+  padding: 0.5rem 1rem;
+   border: solid 2px var(--secondary-color-light);
+  border-radius: var(--radius-sm);
+}
+
+.select-language select:hover {
+  background-color: var(--secondary-color-light);
+  cursor: pointer;
 }
