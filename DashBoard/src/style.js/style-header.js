@@ -26,12 +26,18 @@ export const Title = styled.h1`
     margin: 0 0 0 2rem;
 `;
 
+export const RightContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
+
 export const WeatherDate = styled.div`
     width: 10rem;
     border: solid 2px var(--secondary-color-light);
     border-radius: var(--radius-md);
     margin: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,8 +46,10 @@ export const WeatherDate = styled.div`
 `;
 
 export const SelectLanguage = styled.select`
-  margin-right: 2rem;
-  padding: 0.5rem 1rem;
+font-size: small;
+  display: flex;
+  margin-bottom: 1rem;
+  padding: 0.3rem;
   border: solid 2px var(--secondary-color-light);
   border-radius: var(--radius-sm);
 
