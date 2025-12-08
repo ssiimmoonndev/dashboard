@@ -1,28 +1,29 @@
 import React from "react";
 import { useTranslation } from 'react-i18next';
+import { SidebarButton, SidebarStyle } from "../style.js/style-sidebar";
 
 function Sidebar() {
   const { t } = useTranslation();
 
   return (
-    <div className="sidebar">
-      <button className="button-sidebar">
+    <SidebarStyle>
+      <SidebarButton>
         <i className="fa-regular fa-calendar"></i>
         {t('planning')}
-      </button>
-      <button className="button-sidebar">
+      </SidebarButton>
+      <SidebarButton>
         <i class="fa-regular fa-chart-line"></i>
         {t('stock market')}
-      </button>
-      <button className="button-sidebar">
+      </SidebarButton>
+      <SidebarButton>
         <i class="fa-regular fa-input-numeric"></i>
         {t('sports')}
-      </button>
-      <button className="button-sidebar">
+      </SidebarButton>
+      <SidebarButton>
         <i class="fa-regular fa-circle-info"></i>
         {t('about')}
-      </button>
-    </div>
+      </SidebarButton>
+    </SidebarStyle>
   );
 }
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { SelectLanguage } from "../style.js/style-header";
 
 function Select() {
   const traduction = useTranslation();
@@ -10,13 +11,11 @@ function Select() {
     i18n.changeLanguage(newLanguage);
   }
   return (
-    <div className="select-language">
-      <select value={i18n.language} onChange={changeLanguage}>
+      <SelectLanguage value={i18n.language} onChange={changeLanguage}>
         <option value="fr">FR</option>
         <option value="en">EN</option>
         <option value="es">ES</option>
-      </select>
-    </div>
+      </SelectLanguage>
   )
 }
 

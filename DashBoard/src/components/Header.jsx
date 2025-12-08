@@ -2,19 +2,20 @@ import React from 'react';
 // import WeatherWidget from './WeatherWidget';
 import { useTranslation } from 'react-i18next';
 import Select from './Select';
+import { HeaderStyle, SelectLanguage, Title, WeatherDate } from '../style.js/style-header';
 
 function Header() {
     const { t } = useTranslation();
     return (
-        <header>
-            <h1>{t("title")}</h1>
-            <div className="weather-date">
+        <HeaderStyle>
+            <Title>{t("title")}</Title>
+            <WeatherDate>
                 <div>{t("weather")}</div>
                 <div>{t("date")}</div>
                 {/* <WeatherWidget /> */}
-            </div>
+            </WeatherDate>
             <Select />
-        </header>
+        </HeaderStyle>
     );
 }
 
