@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function WeatherWidget() {
+const WeatherWidget = () => {
 }
 
 export default WeatherWidget;

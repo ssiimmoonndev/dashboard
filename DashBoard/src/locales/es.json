@@ -3,8 +3,7 @@
     "weather": "Clima",
     "date": "Fecha",
     "planning": "Planificación",
-    "crypto": "Cripto",
-    "stock market": "Bolsa",
-    "sports results": "Resultados Deportivos",
+    "crypto": "Cripto / Bolsa",
+    "sports": "Resultados Deportivos",
     "about": "Acerca De"
   }
