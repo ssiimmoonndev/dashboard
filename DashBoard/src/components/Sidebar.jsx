@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from 'react-i18next';
 import styled from "styled-components";
 
-export const SidebarStyle = styled.div`
+const SidebarStyle = styled.div`
     margin: 2rem;
     padding: 2rem 1rem;
     border: solid 2px var(--primary-color-dark);
@@ -16,7 +16,7 @@ export const SidebarStyle = styled.div`
     gap: 2rem;
 `;
 
-export const SidebarButton = styled.div`
+const SidebarButton = styled.div`
     height: 1rem;
     width: 250px;
     border: solid 1px var(--primary-color-dark);
@@ -36,7 +36,7 @@ export const SidebarButton = styled.div`
     }
 `;
 
-function Sidebar() {
+const Sidebar = () => {
   const { t } = useTranslation();
 
   return (

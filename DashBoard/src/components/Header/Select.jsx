@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { SelectLanguage } from "./style";
 
-function Select() {
+const Select= () => {
   const traduction = useTranslation();
   const i18n = traduction.i18n;
 

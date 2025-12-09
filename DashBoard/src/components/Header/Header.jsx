@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Select from './Select';
 import { HeaderStyle, SelectLanguage, Title,RightContainer, WeatherDate } from './style';
 
-function Header() {
+const Header = () => {
     const { t } = useTranslation();
     return (
         <HeaderStyle>
