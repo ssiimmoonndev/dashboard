@@ -2,7 +2,7 @@ import React from 'react';
 // import WeatherWidget from './WeatherWidget';
 import { useTranslation } from 'react-i18next';
 import Select from './Select';
-import { HeaderStyle, SelectLanguage, Title,RightContainer, WeatherDate } from '../style.js/style-header';
+import { HeaderStyle, SelectLanguage, Title,RightContainer, WeatherDate } from './style';
 
 function Header() {
     const { t } = useTranslation();

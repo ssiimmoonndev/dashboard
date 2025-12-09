@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { SelectLanguage } from "../style.js/style-header";
+import { SelectLanguage } from "./style";
 
 function Select() {
   const traduction = useTranslation();

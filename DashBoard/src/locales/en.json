@@ -3,8 +3,7 @@
   "weather": "weather",
   "date": "date",
   "planning": "Schedule",
-  "crypto": "Crypto",
-  "stock market": "Stock market",
+  "crypto": "Crypto / Stock Market",
   "sports": "Sports Results",
   "about": "About"
 }
