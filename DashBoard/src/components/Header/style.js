@@ -45,6 +45,17 @@ export const WeatherDate = styled.div`
     gap: 0.5rem;
 `;
 
+export const TimeText = styled.div`
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+`;
+
+export const DateText = styled.div`
+    font-size: 1rem;
+    text-align: center;
+`;
+
 export const SelectLanguage = styled.select`
 font-size: small;
   display: flex;

@@ -1,8 +1,8 @@
 import React from 'react';
-// import WeatherWidget from './WeatherWidget';
+import WeatherWidget from './WeatherWidget';
 import { useTranslation } from 'react-i18next';
-import Select from './Select';
-import { HeaderStyle, SelectLanguage, Title,RightContainer, WeatherDate } from './style';
+import { HeaderStyle, Title, RightContainer, WeatherDate } from './style';
+import LanguageSelector from './Select';
 
 const Header = () => {
     const { t } = useTranslation();
@@ -11,11 +11,9 @@ const Header = () => {
             <Title>{t("title")}</Title>
             <RightContainer>
                 <WeatherDate>
-                        <div>{t("weather")}</div>
-                        <div>{t("date")}</div>
-                        {/* <WeatherWidget /> */}
+                    <WeatherWidget />
                 </WeatherDate>
-                <Select />
+                <LanguageSelector />
             </RightContainer>
         </HeaderStyle>
     );
