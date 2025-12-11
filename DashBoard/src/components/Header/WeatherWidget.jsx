@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { TimeText, DateText } from './style';
 
 const WeatherWidget = () => {
 
+    const { i18n } = useTranslation();
     const [date, setDate] = useState(new Date());
+    const [temperature, setTemperature] = useState(null);
 
     useEffect(() => {
         const time = setInterval(() => {
@@ -22,8 +25,8 @@ const WeatherWidget = () => {
         year: 'numeric'
     };
 
-    const dateTexte = date.toLocaleDateString('fr-FR', optionsDate);
-    const heureTexte = date.toLocaleTimeString('fr-FR');
+    const dateTexte = date.toLocaleDateString(i18n.language, optionsDate);
+    const heureTexte = date.toLocaleTimeString(i18n.language);
 
     return (
         <>
